@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "centos7"
   config.vm.box_url = "https://f0fff3908f081cb6461b407be80daf97f07ac418.googledrive.com/host/0BwtuV7VyVTSkUG1PM3pCeDJ4dVE/centos7.box"
   config.vm.network "forwarded_port", guest: 4000, host: 4000
-  config.vm.synced_folder "./name.github.io", "/vagrant_data" 
+  config.vm.synced_folder "./learntocodela.github.io", "/vagrant_data" 
   config.vm.provider "virtualbox" do |vb|
   end
    config.vm.provision :shell,
@@ -20,7 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell,
     :run => "always",
     :privileged => false,
-    :inline => "cd /vagrant_data && jekyll serve --host 0.0.0.0"
+    :inline => "cd /vagrant_data && jekyll serve --watch --host 0.0.0.0 --force_polling"
 end
 
 
