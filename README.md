@@ -11,6 +11,7 @@ Please make sure your cpu supports [virtualization](http://www.intel.com/support
 Most modern comps do, but you should double check!
 
 ##Software Prereqs
+* [setup you github page](https://pages.github.com/)
 * [vagrant](http://www.vagrantup.com).
 * ya's likely gonna need Ruby 2 as well.
 * [virtualbox](http://wwww.virtualbox.org)
