@@ -18,6 +18,7 @@ Get some coffee going, install those and then come on back here.
 git clone this project
 cd jekyll-vagrant
 git clone your github.io project
+vagrant plugin install vagrant-vbguest
 vim Vagrantfile
 ```
 ##Look for this line:
