@@ -5,15 +5,17 @@ This is our official local development image for github.io.  No, we're not on pu
 
 ###Hardware Prereqs
 Please make sure your cpu supports [virtualization](http://www.intel.com/support/processors/sb/cs-030729.htm).  
+
 ![lappy486](http://papercraft.wdfiles.com/local--files/papercraft%3Alappy-486/done.jpg)
+
 Most modern comps do, but you should double check!
 
 ##Software Prereqs
 * [vagrant](http://www.vagrantup.com).
-..* ya's likely gonna need Ruby 2 as well.
+* ya's likely gonna need Ruby 2 as well.
 * [virtualbox](http://wwww.virtualbox.org)
 * A [centos7.box](http://www.vagrantbox.es/)
-..* _this part needs to be clearer, likely we'll build and host our own base box.  For now [this box](https://f0fff3908f081cb6461b407be80daf97f07ac418.googledrive.com/host/0BwtuV7VyVTSkUG1PM3pCeDJ4dVE/centos7.box) works and is refrenced in the Vagrantfile.  So if this box is downloadable, then it should auto install_ **:-D**
+* _this part needs to be clearer, likely we'll build and host our own base box.  For now [this box](https://f0fff3908f081cb6461b407be80daf97f07ac418.googledrive.com/host/0BwtuV7VyVTSkUG1PM3pCeDJ4dVE/centos7.box) works and is refrenced in the Vagrantfile.  So if this box is downloadable, then it should auto install_ **:-D**
 
 Get some coffee going, install those on your HOST OS and then come on back here.
 
@@ -24,14 +26,13 @@ cd jekyll-vagrant
 git clone name.github.io project (name is your github.io project name!  You can find it on your github after you've set it up)
 vagrant plugin install vagrant-vbguest
 vim Vagrantfile
-```
+
 ##Look for this line:
 
 ```
 config.vm.synced_folder "./name.github.io", "/vagrant_data"
-
-
 ```
+
 ###Replace ./name.github.io with ./your github.io project
 
 Now type:
