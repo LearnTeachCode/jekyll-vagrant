@@ -20,7 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell,
     :run => "always",
     :privileged => false,
-    :inline => "cd /vagrant_data && jekyll serve --host 0.0.0.0"
+    :inline => "cd /vagrant_data && jekyll serve --watch --host 0.0.0.0 --force_polling"
 end
 
 
