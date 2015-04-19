@@ -20,12 +20,14 @@ Most modern comps do, but you should double check!
 Get some coffee going, install those on your HOST OS and then come on back here.
 
 ##USERNAME.github.io
+
 ```
 git clone https://github.com/LearnToCodeLA/jekyll-vagrant.git
 cd jekyll-vagrant
 git clone name.github.io project (name is your github.io project name!  You can find it on your github after you've set it up)
 vagrant plugin install vagrant-vbguest
 vim Vagrantfile
+```
 
 ##Look for this line:
 
@@ -54,6 +56,7 @@ Boom, there's a local copy of your github.io to play around with!
 test the results in your browser at 127.0.0.1:4000
 
 ###when you're ready to push to github, go to on you HOST OS /jekyll-vagrant/name.github.io 
+
 ```
 git add .
 git commit -m "yuuuup"
