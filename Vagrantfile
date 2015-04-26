@@ -19,7 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
    config.vm.provision :shell,
     :privileged => true,
-    :inline => "yum -y upgrade && yum -y install epel-release && yum -y update && yum -y install ruby && yum -y install rubygems ruby-devel && yum -y install nodejs npm --enablerepo=epel && yum -y install screen && gem install json_pure && gem update --system && gem install coffee-script bundle jekyll jekyll-coffeescript && gem install github-pages --no-ri --no-rdoc && systemctl disable firewalld && systemctl stop firewalld"
+    :inline => "yum -y upgrade && yum -y install epel-release && yum -y update && yum -y install ruby && yum -y install rubygems ruby-devel && yum -y install nodejs npm --enablerepo=epel && yum -y install screen && gem install json_pure && gem install bundler && gem update --system && gem install coffee-script bundle jekyll jekyll-coffeescript && gem install github-pages --no-ri --no-rdoc && systemctl disable firewalld && systemctl stop firewalld"
 
   config.vm.provision :shell,
     :run => "always",
