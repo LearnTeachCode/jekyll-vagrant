@@ -11,21 +11,23 @@ Please make sure your cpu supports [virtualization](http://www.intel.com/support
 Most modern comps do, but you should double check!
 
 ##Software Prereqs
-* [setup you github page](https://pages.github.com/)
-* [vagrant](http://www.vagrantup.com).
-* ya's likely gonna need Ruby 2 as well.
-* [virtualbox](http://wwww.virtualbox.org)
-* A [centos7.box](http://www.vagrantbox.es/)
-* _this part needs to be clearer, likely we'll build and host our own base box.  For now [this box](https://f0fff3908f081cb6461b407be80daf97f07ac418.googledrive.com/host/0BwtuV7VyVTSkUG1PM3pCeDJ4dVE/centos7.box) works and is refrenced in the Vagrantfile.  So if this box is downloadable, then it should auto install_ **:-D**
+* :arrow_right: [setup you github page](https://pages.github.com/)
+* :arrow_right: [vagrant](http://www.vagrantup.com).
+* _ya's likely gonna need Ruby 2 as well_
+* :arrow_right: [virtualbox](http://wwww.virtualbox.org)
+* :arrow_right: Some [centos7.box](http://www.vagrantbox.es/)
+* _For now [this box](https://f0fff3908f081cb6461b407be80daf97f07ac418.googledrive.com/host/0BwtuV7VyVTSkUG1PM3pCeDJ4dVE/centos7.box) works and is refrenced to download in the Vagrantfile.  You shouldn't have to explicity download it, the link is just here for reference_ **:-D**
 
-Get some coffee going, install those on your HOST OS and then come on back here.
+Get some :coffee: going, install all those :arrow_up: :arrow_up: :arrow_up:  on your HOST OS and then come on back here.
 
 ##USERNAME.github.io
 
 ```
+mkdir github.io
+cd github.io
 git clone https://github.com/LearnToCodeLA/jekyll-vagrant.git
+git clone https://github.com/username/username.github.io.git
 cd jekyll-vagrant
-git clone name.github.io project (name is your github.io project name!  You can find it on your github after you've set it up)
 vagrant plugin install vagrant-vbguest
 vim Vagrantfile
 ```
@@ -33,10 +35,10 @@ vim Vagrantfile
 ##Look for this line:
 
 ```
-config.vm.synced_folder "./name.github.io", "/vagrant_data"
+config.vm.synced_folder "../name.github.io", "/vagrant_data"
 ```
 
-###Replace ./name.github.io with ./your github.io project
+###Replace name with your username in ../name.github.io
 
 Now type:
 
@@ -45,13 +47,13 @@ vagrant up
 ```
 
 ###cross your fingers
-Drink some of dat coffee <3<3<3
+Drink some of dat :coffee: :coffee: :coffee: :heartbeat: :heartpulse: :heartbeat: :heartpulse: :heartbeat: :heartpulse: :heartbeat: :heartpulse: :heartbeat: :heartpulse: :heartbeat:
 
 #OPEN A BROWSER AFTER IT SPINS UP!!!
 _just fyi, it takes a while on the first spin up!  Stuff is downloading, so do this somewhere with a decent internet connection on the first run_
 
 #type in 127.0.0.1:4000
-Boom, there's a local copy of your github.io to play around with!
+:boom:, there's a local copy of your github.io to play around with!
 
 ## Make changes to your project files on your HOST OS under /jekyll-vagrant/name.github.io
 test the results in your browser at 127.0.0.1:4000
